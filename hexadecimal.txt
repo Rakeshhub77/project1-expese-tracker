@@ -1,0 +1,88 @@
+var  num =-1
+    var a =[];
+    var temp=Math.abs(num);
+    while(temp>0)
+        {
+            a.push(temp%16)
+            temp=Math.floor(temp/16);
+        }   
+    for(i=a.length;i<=7;i++)
+        {
+            a.push(0);
+        }
+    var b =[];
+    for(var i=7;i>=0;i--)
+        {
+            b.push(a[i]);
+        }
+        
+   if(num<0)
+        {
+            for(i=0;i<=7;i++)
+                {
+                    b[i]=15-b[i];
+                }     
+   var c=1;
+   var i=7;
+    while(i<=7)
+        {
+            if(b[i]+c<16)
+                {
+                    b[i]=b[i]+c;
+                    break;
+                }
+            
+   var temp =b[i];
+    b[i]=(b[i]+c)%16;
+    c= Math.floor((temp+c)/16);
+    i=i-1;
+        
+        }
+    }
+    var i=0;
+    while(i<8 && b[i]==0)
+        {
+            i=i+1;
+        }
+        
+    var hexa= "";
+    for(var j=1;j<=7;j++)
+        {
+            if(b[j]<=9)
+                {
+                    hexa=hexa+b[j];
+                }
+            else
+                if(b[j]<=10)
+                {
+                    hexa=hexa+ "a";
+                }
+            else
+                if(b[j]<=11)
+                {
+                    hexa=hexa+"b";
+                }
+            else
+                if(b[j]<=12)
+                {
+                    hexa=hexa+"c";
+                }
+            else
+                if(b[j]<=13)
+                {
+                    hexa=hexa+"d";
+                }
+            else
+                if(b[j]<=14)
+                {
+                    hexa=hexa+"e";
+                }
+            else
+                if(b[j]<=15)
+                {
+                    hexa=hexa+"f";
+                }
+
+       
+        }
+        console.log(hexa);

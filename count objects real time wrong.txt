@@ -1,0 +1,19 @@
+class count_objects
+{
+  static i = 0;
+  count_objects()
+  {
+    i=i+1;
+  }
+}
+
+var objects_a = new count_objects();
+var objects_b = new count_objects();
+var objects_c = new count_objects();
+var objects_d = new count_objects();
+console.log(count_objects_a.i)
+
+
+
+
+Add constructor

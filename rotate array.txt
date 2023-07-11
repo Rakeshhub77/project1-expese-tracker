@@ -1,0 +1,29 @@
+ for(var i=0;i<k;i++)
+        {
+            var temp=nums[0];
+            for(var j=0;j<nums.length;j++)
+                {
+                    nums[j]=nums[j+1];
+                }
+           nums[nums.length-1]=temp
+        }
+       
+    return nums;
+    
+
+
+
+for(var i=0;i<k;i++)
+        {
+            var temp=nums[0];
+            for(var j=0;j<nums.length;j++)
+                {
+                    var b=nums[j];
+                    nums[j]=temp
+                    temp=b
+                    nums[0]=temp
+                }
+           
+        }
+       
+    return nums;

@@ -1,0 +1,43 @@
+var arr=[];
+  var max=arr[0];
+  for(var i=0;i<arr.length;i++)
+  {
+      for(j=i;j<arr. length;j++)
+      {
+          var sum=0;
+          for(var k=i;k<=j;k++)
+          {
+              sum=sum+arr[k];
+          }
+          if (sum>max)
+          {
+              max=sum
+          }
+          
+      }
+  }
+  return(max);
+    
+
+
+
+
+var arr=[5,2,-4,-5,3,-1,2,3,1];
+  var max=arr[0];
+  for(var i=0;i<arr.length;i++)
+  {
+      for(j=i;j<arr. length;j++)
+      {
+          var sum=0;
+          for(var k=i;k<=j;k++)
+          {
+              sum=sum+arr[k];
+          }
+          if (sum>max)
+          {
+              max=sum
+          }
+          
+      }
+  }
+  console.log(max);

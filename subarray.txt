@@ -1,0 +1,33 @@
+ var arr=[1,2,3,4,];
+                                        
+  for(var i=0;i<arr.length;i++)
+  {
+      for(j=i;j<arr.length;j++)
+      {
+          var str="";
+          for(var k=i;k<=j;k++)
+          {
+              str=str+arr[k];
+          }
+          console.log(str);
+      }
+  }                                                                     
+  
+
+var arr =[];
+                                        
+  for(var i=0;i<arr.length;i++)
+  {
+      for(var j=i;j<arr.length;j++)
+      {
+          var str="";
+          for(var k=i;k<=j;k++)
+          {
+              str=str+arr[k];
+              
+          }
+          console.log(str);
+          
+      }
+    
+  }

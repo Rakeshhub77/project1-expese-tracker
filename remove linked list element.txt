@@ -1,0 +1,29 @@
+let list = new ListNode(),
+       newHead= list;
+
+    while (head!=null) 
+    {
+        if (head.val !== val) 
+        {
+            let newNode = new ListNode(head.val);
+            list.next = newNode;
+            list = list.next;
+        }
+        head = head.next;
+    }
+    return newHead.next;
+
+
+
+let list = new ListNode(0, head),
+        prev = list,
+        cur = head;
+
+    while (cur) { 
+        if (cur.val === val) {
+			prev.next = cur.next;
+		}
+        else prev = cur;
+        cur = cur.next;
+    }
+    return list.next;

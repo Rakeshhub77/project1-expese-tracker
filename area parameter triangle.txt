@@ -1,0 +1,25 @@
+class triangle {
+  constructor(side1, side2, side3)
+  {
+    this.a=side1;
+    this.b=side2;
+    this.c=side3;
+  }
+  calculate_area()
+  {
+      var s=(this.a+this.b+this.c)/2
+      var p= (s*(s-this.a)*(s-this.b)*(s-this.c))
+    console.log(Math.sqrt (p));
+  }
+  calculate_perimeter()
+  {
+    console.log(this.a + this.b + this.c);
+  }
+}
+var object= new triangle(3, 4, 5);
+object.calculate_area();
+object.calculate_perimeter();
+
+var object1= new triangle(6, 8, 10);
+object1.calculate_area();
+object1.calculate_perimeter();

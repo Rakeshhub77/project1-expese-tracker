@@ -1,0 +1,160 @@
+class shape
+{
+  constructor(a)
+  {
+    this.a = a;
+  }
+  print_1()
+  {
+    console.log(this.a);
+  }
+}
+class rectangle extends shape
+{
+    constructor(a, b)
+  {
+    super(a);
+    this.b = b;
+  }
+  print_2()
+  {
+    console.log(this.b);
+  }
+}
+class circle extends shape
+{
+    constructor(a, c)
+  {
+    super(a);
+    this.c = c;
+  }
+  print_3()
+  {
+    console.log(this.c);
+  }
+}
+class square extends rectangle  
+{
+    constructor(b, d)
+  {
+    super(b);
+    this.d = d;
+  }
+  print_4()
+  {
+    console.log(this.d);
+  }
+}
+var obj_1 = new shape("This is shape");
+var obj_2 = new rectangle("This is rectangular shape");
+var obj_3 = new circle("This is circular shape");
+var obj_4 = new square("Square is a rectangle");
+obj_1.print_1();
+obj_2.print_1();
+obj_3.print_1();
+obj_4.print_1();
+
+
+
+
+
+
+
+
+ class Member{
+  constructor (Name, Age, phno, Address, Salary){
+    this.Name=Name;
+    this.Age=Age;
+    this.phno=phno;
+    this.Address=Address;
+    this.Salary=Salary;
+  }
+  printSalary(){
+     console.log(this.Salary);
+  } 
+}
+class Employee extends Member{
+  constructor(Name, Age, phno, Address, Salary,specialization){
+    super(Name, Age, phno, Address, Salary);
+    this.specialization=specialization;
+    
+  }
+  
+}
+class Manager extends Member{
+  constructor(Name, Age, phno, Address, Salary,department){
+    super(Name, Age, phno, Address, Salary);
+    this.department=department;
+  }
+}
+ const a = new Employee("Rahul", 21, 123, "xyz", 25000, "abc");
+ const b = new Manager("Raksha", 20, 456, "wasd", 30000, "xyz");
+ const c=new Member("Rak", 29, 498, "wjkd", 30200, "lkz")
+ a.printSalary();
+ b.printSalary();
+  c.printSalary();
+
+
+
+
+
+
+class PARENT
+
+{
+
+ constructor(p_class)
+
+  {
+
+   this.p_class= p_class;
+
+  }
+
+ print()
+
+  {
+
+   console.log(this.p_class)
+
+  }
+
+}
+
+class CHILD extends PARENT
+
+{
+
+ constructor(x,c_class)
+
+  {
+
+   super(x)
+
+   this.c_class=c_class;
+
+  }
+
+ print_i()
+
+  {
+
+   super.print()
+
+   console.log("nafees")
+
+  }
+
+}
+
+ let a= new PARENT("this is a parent class")
+
+a.print();
+
+let b= new CHILD("this is a child class")
+
+b.print_i()
+
+a= new CHILD("this is a new parent class")
+
+a.print_i()

@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta>
+        <title>
+            Forms
+        </title>
+    
+        <style>
+            body {
+            
+              background-image: url('yoyo.jpg');              
+              background-repeat: no-repeat;
+              background-attachment: fixed; 
+              background-size:cover;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <h1 style ="text-align:center;color: yellow;"> BOOK A CALL</h1>
+        <h4 style ="text-align:center;color:blue;"> Book a call slot our representative will call you within 1 hour of selected time</h4>
+        <hr width="100%"size="4px">
+        <form  onsubmit = "registerUser()" style ="text-align: center";>
+            <b>
+            Name:<input type="text" id="name"><br><br>
+            Email:<input type="text" id="mail"><br><br>
+            Phone:<input type="text" id="Phone Number"><br><br>
+            Time of Call:<input type="date" id="date"> <input type ="time" id ="time"><br><br>
+             <input type="submit" value ="Get a call">
+        </b>
+        </form>
+
+
+        <script>
+function registerUser(){
+
+    const name=document.getElementById('name').value;
+    console.log(name);
+    const mail=document.getElementById('mail').value;
+    console.log(mail);
+    const phone=document.getElementById('Phone Number').value;
+    console.log(phone);
+    const a=document.getElementById('date').value;
+    console.log(a);
+    const b=document.getElementById('time').value;
+    console.log(b);
+
+}
+
+
+        </script>
+
+    
+    </body>  
+
+</html>

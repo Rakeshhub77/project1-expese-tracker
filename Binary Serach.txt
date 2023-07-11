@@ -1,0 +1,38 @@
+let left = 0, right = nums.length - 1;
+  while (left <= right)
+  {
+    let mid = left + Math.floor((right - left) / 2);
+    if (nums[mid] === target) 
+    {
+      return mid;
+    } else if (nums[mid] < target)
+    {
+      left = mid + 1;
+    } else 
+    {
+      right = mid - 1;
+    }
+  }
+  return -1;
+
+
+
+
+var l = 0;
+  var r = nums.length - 1;
+ 
+  while (l<= r)
+  {
+    let m = Math.floor((l+r) / 2);
+    if (nums[m] === target) 
+    { 
+      return m;
+    } else if (nums[m] < target)
+    {
+      l = m+ 1;
+    } else 
+    {
+      r= m - 1;
+    }
+  }
+  return -1;
